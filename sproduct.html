@@ -15,8 +15,8 @@
 
             <div>
                 <ul id="navbar">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li id="lg-bag"><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
@@ -31,54 +31,44 @@
 
         </section>
 
-        <section id="hero">
-            <h4>Welcome</h4>
-            <h2>We hope enjoy</h2>
-            <h1><span style="color: rgb(0, 176, 240)">I</span>N<span style="color: rgb(255, 0, 0)">D</span>3PTH</h1>
-            <p>Thanks for choosing us :)</p>
-            <button>Shop Now</button>
-        </section>
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="images/p1.jpg" width="100%" id="MainImg">
 
-        <section id="product1" class="section-p1">
-            <h2>Featured Products</h2>
-            <p>Our top picks</p>
-            <div class="pro-container">
-                <div class="pro">
-                    <img src="images/p1.jpg">
-                    <div class="des">
-                        <span>IND3PTH</span>
-                        <h5>Infinity Cube</h5>
-                        <div class="star">
-                            <!--<i class="fas fa-star"></i>-->
-                        </div>
-                        <h4>£1</h4>
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="images/p1.jpg" width="100%" class="small-img">
                     </div>
-                    <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="images/p2.jpg">
-                    <div class="des roctopus">
-                        <span>IND3PTH</span>
-                        <h5>Roctopus</h5>
-                        <div class="star">
-                            <!--<i class="fas fa-star"></i>-->
-                        </div>
-                        <h4>£2</h4>
+                    <div class="small-img-col">
+                        <img src="images/p3.png" width="100%" class="small-img">
                     </div>
-                    <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="images/p3.png">
-                    <div class="des">
-                        <span>IND3PTH & Co</span>
-                        <h5>Catapult</h5>
-                        <div class="star">
-                            <!--<i class="fas fa-star"></i>-->
-                        </div>
-                        <h4>£1</h4>
+                    <div class="small-img-col">
+                        <img src="images/p3.png" width="100%" class="small-img">
                     </div>
-                    <a href="#"><i class="fa fa-shopping-cart cart"></i></a>
+                    <div class="small-img-col">
+                        <img src="images/p3.png" width="100%" class="small-img">
+                    </div>
                 </div>
+            </div>
+
+            <div class="single-pro-details">
+                <h6>Fidget Toy</h6>
+                <h4>Infinity Cube</h4>
+                <h2>£1.00</h2>
+                <select>
+                    <option disabled selected hidden>Select Colour</option>
+                    <option>Red</option>
+                    <option>Orange</option>
+                    <option>Yellow</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                    <option>White</option>
+                    <option>Black</option>
+                </select>
+                <input type="number" value="1">
+                <button>Add to Cart</button>
+                <h4>Product Details</h4>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos fugit blanditiis corporis odio, quisquam illo molestias eius minima magnam ipsum nam!</span>
             </div>
         </section>
 
@@ -113,6 +103,28 @@
                 <a href="#">Help</a>
             </div>
         </footer>!-->
+        
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function() {
+                MainImg.src = smallimg[0].src
+            }
+
+            smallimg[1].onclick = function() {
+                MainImg.src = smallimg[1].src
+            }
+
+            smallimg[2].onclick = function() {
+                MainImg.src = smallimg[2].src
+            }
+
+            smallimg[3].onclick = function() {
+                MainImg.src = smallimg[3].src
+            }
+
+        </script>
 
         <script src="script.js"></script>
     </body>

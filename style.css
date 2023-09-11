@@ -72,6 +72,10 @@ body {
     justify-content: center;
 }
 
+#navbar.active {
+    right: 0px;
+}
+
 #navbar li {
     list-style: none;
     padding: 0 20px;
@@ -101,6 +105,15 @@ body {
     left: 20px;
 }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
 #hero {
     background-image: url(images/homepagebg.png);
     height: 90vh;
@@ -126,7 +139,7 @@ button {
     padding: 20px;
     text-decoration: none;
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     -webkit-transition-duration: 0.3s;
@@ -221,3 +234,169 @@ button:active {
     bottom: 20px;
     right: 10%;
 }
+
+#page-header {
+    background-image: url(images/banner.png);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding-left: 100px;
+    flex-direction: column;
+}
+
+#text {
+    background-color: white;
+    width: 475px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid black;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    padding-left: 10px;
+    padding: 10px;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #00b6f9;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 59px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid #00b6f9;
+}
+
+#prodetails .single-pro-details input:focus,
+#prodetails .single-pro-details select:focus {
+    outline: none;
+}
+
+#prodetails .single-pro-details button {
+    border: 2px solid #ff0000;
+    
+}
+
+@media (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: rgb(249, 249, 249);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.06);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        text-decoration: none;
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #1a1a1a;
+        font-size: 24px;
+        display: initial;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        background-image: none;
+        height: 70vh;
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 477px) {
+    #header {
+        padding: 10px 30px;
+    }
+
+    #product1 .pro {
+        width: 100%;
+    }
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+    
+}
+
